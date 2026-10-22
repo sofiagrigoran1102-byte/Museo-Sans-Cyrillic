@@ -1,0 +1,424 @@
+@font-face {
+  font-family: "Museo Sans Cyrillic";
+  font-weight: 100;
+  src: url("../fonts/MuseoSansCyrl100.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrillic";
+  font-weight: 300;
+  src: url("../fonts/MuseoSansCyrl300.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrillic";
+  font-weight: 500;
+  src: url("../fonts/MuseoSansCyrl500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrillic";
+  font-weight: 700;
+  src: url("../fonts/MuseoSansCyrl700.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrillic";
+  font-weight: 900;
+  src: url("../fonts/MuseoSansCyrl900.woff") format("woff");
+}
+
+
+/* Общие стили */
+
+body {
+  background-color: #111329;
+  color: #fbe3b3;
+  font-family: "Museo Sans Cyrillic", Arial, sans-serif;
+  min-width: 1512px;
+}
+
+.hall {
+  width: 1512px;
+  margin: 0 auto;
+  overflow: hidden;
+  background-repeat: no-repeat;
+}
+
+/* Шапка */
+
+.hero {
+  height: 1030px;
+  background-image: url("../images/hero.svg");
+  padding-top: 247px;
+}
+
+h1 {
+  padding-left: 14px;
+  font-size: 68px;
+  line-height: 72px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  color: #101f3b;
+}
+
+/* История шрифта */
+
+.history {
+  height: 1910px;
+  background-image: url("../images/history.svg");
+  padding-top: 60px;
+}
+
+.history h2 {
+  font-size: 64px;
+  line-height: 72px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  color: #620a1f;
+}
+
+.banner p {
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 300;
+  color: #ebd48f;
+  white-space: nowrap;
+}
+
+.banner p + p {
+  margin-top: 34px;
+}
+
+.banner .numeral {
+  margin-bottom: 35px;
+  font-family: "Museo Sans Cyrillic", sans-serif;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 700;
+}
+
+.banner-left {
+  width: 420px;
+  margin-top: 629px;
+  margin-left: 130px;
+}
+
+.banner-left .numeral {
+  margin-left: 2px;
+}
+
+.banner-right {
+  width: 340px;
+  margin-top: 47px;
+  margin-left: 975px;
+}
+
+.banner-right p {
+  margin-left: 6px;
+}
+
+.banner-right .numeral {
+  margin-left: 0;
+}
+
+/* Зал начертаний */
+
+.weights {
+  height: 940px;
+  background-image: url("../images/weights.svg");
+}
+
+.weights h2 {
+  margin-top: 124px;
+  margin-left: 457px;
+}
+
+.weights ul {
+  display: flex;
+}
+
+.weights li {
+  width: 270px;
+  text-align: center;
+}
+
+.letter {
+  color: #10225a;
+}
+
+.label {
+  font-size: 25px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #fbe3b3;
+}
+
+.thin {
+  margin-left: 4px;
+}
+
+.thin .letter {
+  margin-top: 354px;
+  font-size: 186px;
+  line-height: 186px;
+  font-weight: 100;
+}
+
+.thin .label {
+  margin-top: 59px;
+  font-weight: 100;
+}
+
+.light {
+  margin-left: 28px;
+}
+
+.light .letter {
+  margin-top: 296px;
+  font-size: 203px;
+  line-height: 203px;
+  font-weight: 300;
+}
+
+.light .label {
+  margin-top: 49px;
+  font-weight: 300;
+}
+
+.regular {
+  margin-left: 51px;
+}
+
+.regular .letter {
+  margin-top: 267px;
+  font-size: 224px;
+  line-height: 224px;
+  font-weight: 500;
+}
+
+.regular .label {
+  margin-top: 48px;
+  font-weight: 500;
+}
+
+.bold {
+  margin-left: 42px;
+}
+
+.bold .letter {
+  margin-top: 277px;
+  font-size: 222px;
+  line-height: 222px;
+  font-weight: 700;
+}
+
+.bold .label {
+  margin-top: 48px;
+  font-weight: 700;
+}
+
+.black {
+  margin-left: 24px;
+}
+
+.black .letter {
+  margin-top: 340px;
+  font-size: 218px;
+  line-height: 218px;
+  font-weight: 900;
+}
+
+.black .label {
+  margin-top: 42px;
+  font-weight: 900;
+}
+
+/* Особенности */
+
+.features {
+  height: 1013px;
+  background-image: url("../images/features.svg");
+}
+
+.features h2 {
+  margin-top: 55px;
+  margin-left: 506px;
+}
+
+.cards {
+  display: flex;
+  align-items: flex-start;
+}
+
+/* Заголовки (ОКРУГЛОСТЬ, ГЕОМЕТРИЯ, ПЛАВНОСТЬ) */
+.card h3 {
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 500; 
+  text-align: center;
+  text-transform: uppercase;
+  color: #e9dab4;
+}
+
+/* (О, С, З) */
+.glyph {
+  text-align: center;
+  font-weight: 700; 
+  color: #ebd48f;
+}
+
+.card-round {
+  width: 300px;
+  margin-top: 345px;
+  margin-left: 226px;
+}
+
+.card-round .glyph {
+  margin-top: 24px;
+  font-size: 182px;
+  line-height: 182px;
+}
+
+.card-geometry {
+  width: 400px;
+  margin-top: 323px;
+  margin-left: 30px;
+}
+
+.geometry-row {
+  display: flex;
+  margin-top: 14px;
+}
+
+.geometry-row .glyph {
+  width: 144px;
+  margin-left: 20px;
+  font-size: 215px;
+  line-height: 215px;
+}
+
+/* Мелкие подписи выносных стрелок */
+.notes {
+  margin-left: 87px;
+  margin-top: 94px;
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 500; 
+  white-space: nowrap;
+  color: #e9dab4;
+}
+
+.notes p + p {
+  margin-top: 88px;
+  color: #e9dab4;
+}
+
+.card-smooth {
+  width: 300px;
+  margin-top: 342px;
+  margin-left: 32px;
+}
+
+.card-smooth .glyph {
+  margin-top: 26px;
+  font-size: 170px;
+  line-height: 170px;
+}
+
+
+/* Языки */
+
+.languages {
+  height: 747px;
+  background-image: url("../images/languages.svg");
+  padding-top: 602px;
+}
+
+.languages h2 {
+  font-size: 66px;
+  line-height: 66px;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  color: #6f0822;
+}
+
+/* Кириллица прорастает из латиницы */
+
+.cyrillic {
+  height: 885px;
+  background-image: url("../images/cyrillic.svg");
+}
+
+.row {
+  display: flex;
+  align-items: flex-start;
+}
+
+.caption {
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 800;
+  white-space: nowrap;
+  color: rgba(101, 23, 33, 0.6);
+  text-transform: uppercase;
+}
+
+.caption-one {
+  width: 86px;
+  margin-top: 660px;
+  margin-left: 63px;
+}
+
+.caption-two {
+  width: 88px;
+  margin-top: 656px;
+  margin-left: 389px;
+}
+
+.cyrillic h2 {
+  width: 312px;
+  margin-top: 464px;
+  margin-left: 454px;
+  font-size: 28px;
+  line-height: 34px;
+  font-weight: 500;
+  text-align: center;
+  white-space: nowrap;
+  color: #fdddb0;
+
+}
+
+/* Билеты */
+
+.tickets {
+  height: 1315px;
+}
+
+/* Подвал */
+
+.exit {
+  height: 1092px;
+  background-image: url("../images/exit.svg");
+  padding-top: 916px;
+  padding-right: 35px;
+  padding-left: 27px;
+}
+
+.exit p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 46px;
+  line-height: 46px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: #c99471;
+}
+
+.exit p + p {
+  margin-top: 15px;
+}
